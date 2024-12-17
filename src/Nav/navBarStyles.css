@@ -1,0 +1,10 @@
+.navBarStyles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.cart {
+  width: 24px;
+}
