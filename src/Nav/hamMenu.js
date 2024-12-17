@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./hamMenu.css";
+import { Link } from "react-router-dom";
 
 const HamMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,16 +22,14 @@ const HamMenu = () => {
       <nav className={`menu ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Link to="/" onClick={toggleMenu}>
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+            <Link to="policy" onClick={toggleMenu}>
+              <a>Privacy Policy</a>
+            </Link>
           </li>
         </ul>
       </nav>
