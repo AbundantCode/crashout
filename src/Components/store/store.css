@@ -1,0 +1,14 @@
+.storeCont {
+  display: flex;
+  flex-direction: row;
+}
+
+.storeItems {
+  display: flex;
+}
+
+.itemCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
