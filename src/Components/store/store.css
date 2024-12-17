@@ -1,6 +1,7 @@
 .storeCont {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
 }
 
 .storeItems {
@@ -10,5 +11,6 @@
 .itemCont {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
