@@ -1,4 +1,5 @@
 import PrivacyPolicy from "./Components/policy/privacyPolicy";
+import ProductPage from "./Components/product/productPage";
 import Store from "./Components/store/store";
 import Navbar from "./Nav/NavBar";
 import { Routes, Route } from "react-router-dom";
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route exact path="/" Component={Store} />
           <Route path="/policy" Component={PrivacyPolicy} />
+          <Route path="product" Component={ProductPage} />
         </Routes>
       </header>
     </div>
