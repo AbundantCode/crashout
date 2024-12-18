@@ -1,6 +1,6 @@
 import PrivacyPolicy from "./Components/policy/privacyPolicy";
 import ProductPage from "./Components/product/productPage";
-import Store from "./Components/store/store";
+import Store from "./Components/store/storePage";
 import Navbar from "./Nav/NavBar";
 import { Routes, Route } from "react-router-dom";
 
