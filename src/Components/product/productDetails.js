@@ -15,7 +15,7 @@ const ProductDetails = ({
     <div className="product-details">
       <h1>{productName}</h1>
       <p className="sku">SKU: {sku}</p>
-      <p className="price">${price.toFixed(2)}</p>
+      <p className="price">${price}</p>
 
       <label>Size</label>
       <select value={size} onChange={(e) => setSize(e.target.value)}>

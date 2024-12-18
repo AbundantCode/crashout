@@ -1,4 +1,5 @@
-import { itemData } from "./data";
+import { Link } from "react-router-dom";
+import { itemData } from "../data";
 import Item from "./Item";
 import "./store.css";
 
@@ -8,7 +9,9 @@ const Store = () => {
       <h1>Buy Now</h1>
       <div className="storeItems">
         {itemData.map((item) => (
-          <Item key={item} item={item} />
+          <Link to={`/product/${item.id}`}>
+            <Item key={item.id} item={item} />
+          </Link>
         ))}
       </div>
     </div>

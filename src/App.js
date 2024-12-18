@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route exact path="/" Component={Store} />
           <Route path="/policy" Component={PrivacyPolicy} />
-          <Route path="product" Component={ProductPage} />
+          <Route path="/product/:id" Component={ProductPage} />
         </Routes>
       </header>
     </div>
