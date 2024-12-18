@@ -1,4 +1,5 @@
 import React from "react";
+import { useCart } from "../../State/storeState";
 
 const ProductDetails = ({
   productName,
@@ -11,6 +12,8 @@ const ProductDetails = ({
   onAddToCart,
   onBuyNow,
 }) => {
+  const { cart, addItem } = useCart();
+  console.log(cart);
   return (
     <div className="product-details">
       <h1>{productName}</h1>
@@ -35,7 +38,7 @@ const ProductDetails = ({
       />
 
       <div className="buttons">
-        <button onClick={onAddToCart} className="add-to-cart">
+        <button onClick={() => addItem(onAddToCart)} className="add-to-cart">
           Add to Cart
         </button>
         <button onClick={onBuyNow} className="buy-now">

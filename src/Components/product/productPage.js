@@ -36,7 +36,7 @@ const ProductPage = () => {
         setSize={setSize}
         quantity={quantity}
         setQuantity={setQuantity}
-        onAddToCart={handleAddToCart}
+        onAddToCart={item}
         onBuyNow={handleBuyNow}
       />
     </div>
