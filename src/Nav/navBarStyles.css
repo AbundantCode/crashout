@@ -5,6 +5,25 @@
   width: 100%;
 }
 
+.cartCont {
+  position: relative;
+}
 .cart {
   width: 24px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }

@@ -10,13 +10,6 @@ const ProductPage = () => {
   const { id } = useParams();
   const item = itemData[id];
   console.log(item.img);
-  const handleAddToCart = () => {
-    alert(`Added ${quantity} x White Tee (Size: ${size}) to cart!`);
-  };
-
-  const handleBuyNow = () => {
-    alert("Proceeding to checkout...");
-  };
 
   return (
     <div className="product-page">
@@ -37,7 +30,7 @@ const ProductPage = () => {
         quantity={quantity}
         setQuantity={setQuantity}
         onAddToCart={item}
-        onBuyNow={handleBuyNow}
+        // onBuyNow={handleBuyNow}
       />
     </div>
   );
