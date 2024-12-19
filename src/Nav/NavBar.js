@@ -4,13 +4,13 @@ import HamMenu from "./hamMenu";
 import cartImg from "./cart.png";
 import { useCart } from "../State/storeState";
 
-const Navbar = () => {
+const Navbar = ({ setCartOpen }) => {
   const { cart } = useCart();
   return (
     <div className="navBarStyles">
       <HamMenu />
       <img src={logo} />
-      <div className="cartCont">
+      <div className="cartCont" onClick={() => setCartOpen(true)}>
         <img className="cart" src={cartImg} />
         {cart.length > 0 && <span className="cart-badge">{cart.length}</span>}
       </div>

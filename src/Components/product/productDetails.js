@@ -12,8 +12,7 @@ const ProductDetails = ({
   onAddToCart,
   onBuyNow,
 }) => {
-  const { cart, addItem } = useCart();
-  console.log(cart);
+  const { addItem } = useCart();
   return (
     <div className="product-details">
       <h1>{productName}</h1>
